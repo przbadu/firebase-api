@@ -62,4 +62,11 @@ const signUp = async (req, res) => {
   }
 };
 
+const signIn = async (req, res) => {
+  try {
+  } catch (e) {
+    return res.status(400).json(e);
+  }
+};
+
 module.exports = { signUp };

@@ -9,5 +9,6 @@ firebase.initializeApp(firebaseConfig);
 const users = require('./api/users');
 
 app.post('/sign_up', users.signUp);
+app.post('/sign_in', users.signIn);
 
 exports.api = functions.https.onRequest(app);
