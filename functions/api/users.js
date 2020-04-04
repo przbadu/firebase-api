@@ -64,9 +64,10 @@ const signUp = async (req, res) => {
 
 const signIn = async (req, res) => {
   try {
+    return res.status(200).json({ message: 'sign in successful' });
   } catch (e) {
     return res.status(400).json(e);
   }
 };
 
-module.exports = { signUp };
+module.exports = { signUp, signIn };
